@@ -205,7 +205,7 @@ html {
 /* Hero floating cards */
 .hero-image {
     position: relative;
-    height: 500px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,56 +213,58 @@ html {
 
 .floating-card {
     position: absolute;
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-xl);
-    border: 1px solid rgb(var(--border));
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.2rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
-    min-width: 180px;
+    min-width: 160px;
     transition: var(--transition);
 }
 
 .floating-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(255, 255, 255, 0.3);
 }
 
 .floating-card i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .floating-card h6 {
     font-weight: 600;
     margin-bottom: 0.25rem;
-    color: rgb(var(--text-primary));
-}
-
-.floating-card p {
-    color: rgb(var(--text-secondary));
+    color: #2d3748;
     font-size: 0.9rem;
 }
 
-.floating-card-2 {
-    top: 20%;
-    right: 10%;
-    animation: float 6s ease-in-out infinite;
-    animation-delay: -2s;
-}
-
-.floating-card-3 {
-    bottom: 20%;
-    left: 10%;
-    animation: float 6s ease-in-out infinite;
-    animation-delay: -4s;
+.floating-card p {
+    color: #4a5568;
+    font-size: 0.8rem;
+    margin-bottom: 0;
 }
 
 .floating-card:first-child {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: float 6s ease-in-out infinite;
+    top: 15%;
+    right: 15%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.floating-card-2 {
+    top: 55%;
+    right: 5%;
+    animation: float 8s ease-in-out infinite;
+    animation-delay: -2.5s;
+}
+
+.floating-card-3 {
+    bottom: 15%;
+    left: 20%;
+    animation: float 8s ease-in-out infinite;
+    animation-delay: -5s;
 }
 
 @keyframes float {
