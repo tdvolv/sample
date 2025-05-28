@@ -237,13 +237,9 @@ async function simulateFormSubmission() {
     // Simulate API call delay
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            // Simulate 95% success rate
-            if (Math.random() > 0.05) {
-                resolve();
-            } else {
-                reject(new Error('Simulated server error'));
-            }
-        }, 2000);
+            // Always succeed for demo purposes
+            resolve();
+        }, 1500);
     });
 }
 
