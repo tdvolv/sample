@@ -202,6 +202,29 @@ html {
     margin-top: 2rem;
 }
 
+/* Brand styling */
+.brand-logo {
+    text-align: left;
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0.25rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    letter-spacing: -1px;
+}
+
+.brand-tagline {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
 /* Hero floating cards */
 .hero-image {
     position: relative;
@@ -609,15 +632,22 @@ html {
     
     .floating-card {
         position: static;
-        margin: 1rem 0;
+        margin: 1rem auto;
         transform: none !important;
         animation: none !important;
+        max-width: 200px;
+        display: block;
     }
     
     .hero-image {
         height: auto;
         flex-direction: column;
         margin-top: 3rem;
+        gap: 1rem;
+    }
+    
+    .brand-name {
+        font-size: 2rem;
     }
     
     .contact-form-wrapper {
