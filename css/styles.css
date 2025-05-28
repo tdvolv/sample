@@ -139,7 +139,7 @@ html {
 
 /* Hero Section */
 .hero-section {
-    padding: 8rem 0 4rem;
+    padding: 4rem 0 4rem;
     background: linear-gradient(135deg, rgb(var(--light)) 0%, white 100%);
     position: relative;
     overflow: hidden;

@@ -314,8 +314,7 @@ function initSmoothScrolling() {
             if (target) {
                 e.preventDefault();
                 
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = target.offsetTop - navbarHeight - 20;
+                const targetPosition = target.offsetTop - 20;
                 
                 window.scrollTo({
                     top: targetPosition,
